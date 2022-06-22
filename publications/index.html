@@ -62,13 +62,13 @@
                 <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                   Who We Are
                 </h6>
-                <a href="pages/about-us.html" class="dropdown-item border-radius-md">
+                <a href="../" class="dropdown-item border-radius-md">
                   <span>Research Focus</span>
                 </a>
-                <a href="pages/author.html" class="dropdown-item border-radius-md">
+                <a href="../" class="dropdown-item border-radius-md">
                   <span>Sponsored Projects</span>
                 </a>
-                <a href="pages/contact-us.html" class="dropdown-item border-radius-md">
+                <a href="../" class="dropdown-item border-radius-md">
                   <span>Contact Us</span>
                 </a>
                 <!--<h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
@@ -110,7 +110,7 @@
             <ul class="dropdown-menu dropdown-menu-animation dropdown-menu-end dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
               <div class="d-none d-lg-block">
                 <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="presentation.html">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../publications">
                     <div class="w-100 d-flex align-items-center justify-content-between">
                       <div>
                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Journals</h6>
@@ -129,7 +129,7 @@
                   </div>
                 </li>
                 <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="presentation.html">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../publications">
                     <div class="w-100 d-flex align-items-center justify-content-between">
                       <div>
                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Conference</h6>
@@ -148,7 +148,7 @@
                   </div>
                 </li>
                 <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="presentation.html">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../publications">
                     <div class="w-100 d-flex align-items-center justify-content-between">
                       <div>
                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Workshops</h6>
@@ -167,7 +167,7 @@
                   </div>
                 </li>
                 <li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="presentation.html">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../publications">
                     <div class="w-100 d-flex align-items-center justify-content-between">
                       <div>
                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Others</h6>
@@ -188,7 +188,7 @@
                   </div>
                 </li>
                 <!--<li class="nav-item dropdown dropdown-hover dropdown-subitem">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="presentation.html">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../publications">
                     <div class="w-100 d-flex align-items-center justify-content-between">
                       <div>
                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Elements</h6>
@@ -446,15 +446,15 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="filtering-button">
-                        <a class="active" data-filter="*"> All Publications</a>
-                        <a data-filter=".cat1">Journal</a>
-                        <a data-filter=".cat2">Conference (Full)</a>
-                        <a data-filter=".cat3">Conference (Poster)</a>
-                        <a data-filter=".cat4">Workshop</a>
-                        <a data-filter=".cat5">Network</a>
-                        <a data-filter=".cat6">HCI</a>
-                        <a data-filter=".cat7">Distributed Systems</a>
-                        <a data-filter=".cat8">Sensing</a>
+                        <a class="btn btn-primary" data-filter="*"> All Publications</a>
+                        <a class="btn btn-secondary" data-filter=".cat1">Journal</a>
+                        <a class="btn btn-secondary" data-filter=".cat2">Conference (Full)</a>
+                        <a class="btn btn-secondary" data-filter=".cat3">Conference (Poster)</a>
+                        <a class="btn btn-secondary" data-filter=".cat4">Workshop</a>
+                        <a class="btn btn-secondary" data-filter=".cat5">Network</a>
+                        <a class="btn btn-secondary" data-filter=".cat6">HCI</a>
+                        <a class="btn btn-secondary" data-filter=".cat7">Distributed Systems</a>
+                        <a class="btn btn-secondary" data-filter=".cat8">Sensing</a>
                       </div>
                     </div>
                   </div>
@@ -1140,8 +1140,10 @@
 		$grid.isotope({ filter: filterValue });
     });
     $('.filtering-button').on('click', 'a', function () {
-        $('.filtering-button a').removeClass('active');
-        $(this).addClass('active');
+        $('.filtering-button a').removeClass('btn-primary');
+        $('.filtering-button a').addClass('btn-secondary');
+        $(this).addClass('btn-primary');
+        $(this).removeClass('btn-secondary');
     });
   </script>
 </body>
