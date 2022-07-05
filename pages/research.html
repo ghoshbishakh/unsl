@@ -96,14 +96,14 @@
                 <ul class="list-group">
                   <li class="nav-item list-group-item border-0 p-0">
                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="#">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Computer Human Interaction</h6>
-                      <span class="text-sm">Assistive Systems, Human Machine Interfacing</span>
+                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Sensing</h6>
+                      <span class="text-sm">Smartphones, Wearables, Sensors</span>
                     </a>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="#">
-                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Sensing</h6>
-                      <span class="text-sm">Smartphones, Wearables, Sensors</span>
+                      <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Computer Human Interaction</h6>
+                      <span class="text-sm">Assistive Systems, Human Machine Interfacing</span>
                     </a>
                   </li>
                   <li class="nav-item list-group-item border-0 p-0">
@@ -123,12 +123,12 @@
               <div class="row d-lg-none">
                 <div class="col-md-12 g-0">
                   <a class="dropdown-item py-2 ps-3 border-radius-md" href="#">
-                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Computer Human Interaction</h6>
-                    <span class="text-sm">Assistive Systems, Human Machine Interfacing</span>
-                  </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="#">
                     <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Sensing</h6>
                     <span class="text-sm">Smartphones, Wearables, Sensors</span>
+                  </a>
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="#">
+                    <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Computer Human Interaction</h6>
+                    <span class="text-sm">Assistive Systems, Human Machine Interfacing</span>
                   </a>
                   <a class="dropdown-item py-2 ps-3 border-radius-md" href="#">
                     <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">Distributed Systems</h6>
@@ -175,25 +175,56 @@
       <div class="col-lg-12 mx-auto">
         <!--<h2>Research Focus @ UbiNet</h2>-->
         <hr>
+          
+        <!-- Sensing -->
+          
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
-                <h4>Networking</h4>
+                <h2>Sensing</h2>
           </div>
           <div class="tab-content tab-space p-3">
-            <p> The network plays a significant role in the design and development of today's large-scale distributed pervasive systems. We broadly work on network measurement, protocol design, and network-application integration. Our broad focus is to make the Internet ubiquitous and friendly for inter-connectivity among millions of devices. We list a few of our current projects here. </p>
+            <p> Pervasive sensing is the primary focus of our research group. We sense everything, humans and the environment, and with different modalities, like the locomotive, acoustic, RF, medical, etc., under different infrastructures, like active and passive sensing, wearables, fixed-infrastructure, sensing, etc. The objective is to develop ubiquitous applications that can be leveraged through low-cost sensing infrastructure. We use different technologies, like signal processing, machine learning, deep learning, etc., from the algorithmic perspective to meet our goals. Some of our recent exciting projects are as follows.</p>
             
-            <h5>Video Streaming over Ubiquitous Internet</h5>
-              <p>Video consumes the majority of the traffic on today's Internet. Users demand high Quality of Experience (QoE) from the streaming service providers; however, it is challenging to monitor and understand the state of the underlying network to stream the videos an optimal quality. We work towards making the streaming applications smarter by incorporating intelligence in the network. Such an intelligent integration between the network and the application can serve many purposes, like optimizing the video QoE, minimizing the energy consumption during video streaming, optimizing network usage, and so on. We explore specific lower-layer network properties, like the connection states, signaling information, bandwidth history, etc., to develop an online learning mechanism to optimize the video data download from the streaming server.</p>         
-
-              
-
+            <h5>Smart Transportation: Sensing the Road, the Vehicle, and the Driver</h5>
+              <p>Road travel in developing countries, particularly in the Indian subcontinent, is very sporadic because of multiple socio-economic factors. The roads are bumpy in many places; infrastructure is not very good, the streets are congested due to heavy traffic, and so on. We develop pervasive sensing modalities to sense the road, the transport infrastructure, and the driver. One critical issue is understanding various points of interest (PoIs) on the road, which affect travel. We use smartphone-based crowdsensing, leveraging the embedded sensors on today's smartphones like IMU, GPS, etc., to capture various PoIs and tag them over the map. One of the crucial issues is monitoring a driver's driving behavior and how the driver interacts with various landmarks on the road, like speed breakers, potholes, turns, etc. We also aim to understand the driving behavior and its impact on different maneuvers taken by the driver. Collectively, we target the lifestyle of citizens on the road to develop assistive technologies to support them during their daily commute.<br><br>
+                <iframe width="380" height="212" src="https://www.youtube.com/embed/vgzzV-UNFfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             
+              </p>
+              <h5>Human Sensing: Activity Recognition and Annotation</h5>
+              <p>Human activity recognition (HAR) has been one of the essential building blocks behind various pervasive applications. We are working on developing lightweight and cost-effective approaches for HAR, starting from macro-activities, like walking, running, writing on a board, meeting group detection, etc., to micro and fine-grained activities like cooking in a smart-home scenario. We use various modalities, like IMU, acoustic, RF, etc., for inferring the activities. Another area of our prime focus is activity annotation. The typical HAR models work in a supervised environment; therefore, they need a massive amount of labeled data to train the models. The question is, how do we label or annotate this data? We work to develop a robust and automated approach to use auxiliary sensing modalities, like acoustic, to label the IMU data for activity recognition. This is a challenging problem as the method does not have any prior knowledge; therefore, it needs to work in an unsupervised way. We also work on understanding the granularity and informativeness of these labels and how the generated labels can contribute to the development of large-scale activity recognition models.<br><br> 
+               <iframe width="380" height="212" src="https://www.youtube.com/embed/fPeB20pJPEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+              <h5>Environment Sensing: Making the World a Smart Place to Live</h5>
+              <p> Of late, we started working on sensing the environment. <a href="https://www.iqair.com/in-en/world-most-polluted-cities" target="_blank">Six out of top 10 polluted cities in the world are from India.</a> We aim to develop a low-cost, portable pollution monitoring device that can help individuals sense the environment for the presence of different pollutants in outdoor and indoor environments. We also work on designing an efficient mechanism for deciding the placement of pollution monitoring devices in an indoor setup, understand the impact of pollutants on the cognitive and behavioral aspects of humans, and understand the impact of several indoor activities on the pollution level of the room.    
+              </p>
           </div>
         </div>
-
-        <!--   Sensing  -->
+        
+        <!-- HCI -->
+          
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
-                <h4>Sensing</h4>
+                <h2>Computer Human Interaction</h2>
+          </div>
+          <div class="tab-content tab-space p-3">
+            <p> The prime focus of our lab is to develop pervasive and ubiquitous systems for computer-human interactions. Towards this goal, we use interactive sensing modalities, like video, audio, RF sensing, smartphone-based sensing, smart wearables, etc., to design assistive systems for the common masses, particularly for the regions of underdeveloped and developing countries. Some of our current projects are as follows. </p>
+            
+            <h5>Smart Interface for Virtual Meeting Apps</h5>
+              <p>For over two decades, video conferencing has been a productive approach for exchanging conversations between multiple participants through a digital online mode. During the COVID-19 pandemic and beyond, it became a necessity rather than an option when almost every meeting, be it a classroom teaching or a business meeting, is being conducted in the virtual mode through various online video conferencing platforms. Nevertheless, there has been a serious concern about these meetings' quality due to the lack of engagement from the participants, particularly in the business meetings or the classroom teachings, educational seminars, etc. Many participants tend to be passive during the sessions, mainly when they find other more exciting activities, like reading a storybook or an article over the Internet or browsing through their social networking feeds. Consequently, attending the meeting becomes merely a proof of participation, like giving the class attendance while not following the lectures!<br>
+              We work on developing intelligent interfaces for online meeting attendees to monitor their cognitive involvement in the meetings. We explore the behavioral patterns of individuals during online discussions and then use active and passive sensing modalities, like video, RF, acoustics, wearables, etc., to see whether the participant is cognitively involved in the meeting's discussions.<br><br>
+                  <iframe width="380" height="212" src="https://www.youtube.com/embed/edMFZH90iB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p> 
+              
+            <h5>Mobile Interface Design for Challenged and Disabled Peoples</h5>
+              <p>Today's smartphones are getting smarter; however, they might not be absolutely friendly for challenged and disabled people. For example, people with medical issues like dactylitis, sarcopenia, and joint pains might have difficulty typing using a smartphone's conventional QWERTY soft-keyboard. Existing gaze or voice-based approaches do not work well without commercial trackers or noisy environments. We develop intelligent interfaces to help such peoples interact with the smartphone seamlessly, using alternate modalities such as head gestures, visual cues, etc. This is particularly challenging as the method must be efficient enough to run over a smartphone. We develop lightweight tracking techniques by leveraging online learning to solve this problem. <br><br>
+                  <iframe width="380" height="212" src="https://www.youtube.com/embed/eXWbPSuuEag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+          </div>
+        </div>
+          
+        <!-- Distributed Systems -->
+          <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+          <div class="container border-bottom">
+                <h2>Distributed Systems</h2>
           </div>
           <div class="tab-content tab-space p-3">
             <p>
@@ -206,6 +237,27 @@
 
               
 
+          </div>
+        </div>
+              
+        <!-- Networking -->
+        <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
+          <div class="container border-bottom">
+                <h2>Networking</h2>
+          </div>
+          <div class="tab-content tab-space p-3">
+            <p> The network plays a significant role in the design and development of today's large-scale distributed pervasive systems. We broadly work on network measurement, protocol design, and network-application integration. Our broad focus is to make the Internet ubiquitous and friendly for inter-connectivity among millions of devices. We list a few of our current projects here. </p>
+            
+            <h5>Video Streaming over Ubiquitous Internet</h5>
+              <p>Video consumes the majority of the traffic on today's Internet. Users demand high Quality of Experience (QoE) from the streaming service providers; however, it is challenging to monitor and understand the state of the underlying network to stream the videos an optimal quality. We work towards making the streaming applications smarter by incorporating intelligence in the network. Such an intelligent integration between the network and the application can serve many purposes, like optimizing the video QoE, minimizing the energy consumption during video streaming, optimizing network usage, and so on. We explore specific lower-layer network properties, like the connection states, signaling information, bandwidth history, etc., to develop an online learning mechanism to optimize the video data download from the streaming server.</p>  
+              
+              <h5>Energy-efficient Networking</h5>
+              <p>
+              Next-generation 5G New Radio (NR) cellular networks operating at mmWave frequencies are targeted to support diverse use cases, such as enhanced Mobile Broadband (eMBB), massive machine-type communications (mMTC), ultra-reliable and low latency communications (URLLC), etc. Energy-Efficiency is one of the key performance indicators for NR technology. User Equipment (UE) battery life significantly impacts the Quality of Experience (QoE) of the UE. Thus the 5G NR standard is designed to have great flexibility in network operation modes to adapt to different requirements and trade-offs. 3GPP, in its 5G technical specification release, has proposed various power-saving schemes such as connected mode Discontinuous Reception (cDRX), RRC_INACTIVE state, etc. Today's ubiquitous applications need to leverage the energy-efficiency features supported by the underlying network. We primarily work in designing energy-efficient network interfaces by exploiting the application characteristics. More specifically, we target combining sensing and communication with running the applications seamlessly with fewer carbon footprints. On this front, we also contribute to developing open-source tools and simulation frameworks. <br><br>
+                  <iframe width="380" height="212" src="https://www.youtube.com/embed/tmoCvKiM_Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="380" height="212" src="https://www.youtube.com/embed/4m44MYRYiio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="380" height="212" src="https://www.youtube.com/embed/U0C_mXrLexs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
           </div>
         </div>
 
