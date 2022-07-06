@@ -224,15 +224,58 @@
                 <h2>Distributed Systems</h2>
           </div>
           <div class="tab-content tab-space p-3">
+<<<<<<< HEAD
             <p>
               Large-scale pervasive systems are likely to be distributed. We study reliability, fault-tolerance, system vulnerability assessment, etc., for large-scale distributed systems. From the application perspective, we work for developing blockchain-assisted systems and utilizing the concepts of blockchain and decentralized web for secured data and asset transfer among multiple consortiums of users. Our research in distributed systems also focuses on various aspects of cloud and edge computing, like resource allocation, edge-cloud orchestration, containerized application development, deployment, etc. A few of our recent researches are summarized next. 
             </p>
             
               <h5>Edge Networking and Resource Management at the Edge</h5>
               <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+=======
+            
+            <p>
+              Centralization of control and trust on a single authoratitive entity vastly reduces the trustworthiness of any sytem as a whole.
+              A major focus of our research on distributed systems is to build decentralized systems where the stakeholders maintain control with themselves and 
+              the trust basis for any operation is not centralized. We primarily focus on the interoperability aspect of decentralized systems, mainly involving permissioned distribute ledger technologies (DLTs).
+            </p>
+            
+            
+            <h5>Decentralized Service Providing Platforms</h5>
+            <p>
+            With the increasing adoption of private blockchain platforms, consortia operating in various sectors such as trade, finance, logistics, etc., 
+            are becoming common. Despite having the benefits of a completely decentralized architecture which supports transparency and distributed control, 
+            existing private blockchains limit the data, assets, and processes within its closed boundary, which restricts secure and verifiable service provisioning to
+             the end-consumers. Thus, platforms such as e-commerce with multiple sellers or cloud federation with a collection of cloud service providers cannot 
+             be decentralized with the existing blockchain platforms. The focus of this work is to develop a decentralized framework whose primary objective is 
+             interfacing private blockchain with end-users by leveraging the unique combination of public and private blockchain platforms through interoperation. 
+             We have taken up the use case of decentralized cloud federations, we have demonstrated the viability of some of our solutions. 
+             We build our prototypes primarily with standard platforms such as Ethereum and Hyperledger Fabric.
+            </p>
+>>>>>>> cdc41e6111c69816126c3dc3213a593758f73e66
 
+            
+              <h5>Identity Management for Blockchain Networks</h5>
+              <p>
+                The industry is seeing more and more adoption of permissioned blockchain networks for transparent yet secure and trusted coordination 
+                between different business entities. However, this has resulted in the formation of isolated blockchain consortiums which have no standard protocol
+                for interoperating with one another.
+                Interoperation for data sharing between permissioned blockchain networks relies on networks' abilities to 
+                independently authenticate requests and validate proofs accompanying the data; these typically contain digital signatures. 
+                This requires counterparty networks to know the identities and certification chains of each other's members, establishing a common trust basis rooted in identity. 
+                In this work we are building an architecture and set of protocols for distributed identity management across permissioned blockchain networks to establish a trust basis for cross-network data sharing.
+                We incorporate self-sovereign decentralized identities (SSI and DIDs) in DLT components through which they obtain privacy-preserving verifiable membership credentials.
+                During interoperation, networks can securely and dynamically discover each others' latest membership lists and members' credentials.
+              </p>
+
+              <h5>Privacy Preserving Negotiation of Common Trust Basis</h5>
               
-
+                <p>
+                  Interoperation between permissioned consortium blockchain networks relies on their abilities to discover and validate the identities of each others’ participant organizations. 
+                  In that aspect, organizations may possess self-sovereign decentralized identities and verifiable credentials issued by well-known certification authorities. 
+                  However, two mutually untrusting networks of organizations can establish a basis for interoperation only if they have one or more certification authorities in common.
+                  Yet, for privacy reasons, neither of them may want to expose a priori their entire lists of authorities, necessitating a negotiation process through which common authorities can be identified.
+                  In this work, we analyze this negotiation problem, and are developing protocols through which two mutually untrusting parties can find out a common trust anchor in the form of a verifiable credential issuer without revealing any of their trust anchors which are not common between them to one another.
+                </p>
           </div>
         </div>
               
